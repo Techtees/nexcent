@@ -6,6 +6,7 @@ padding: 1.87rem;
 `
 export const Nav = styled.nav`
 width: 90%;
+max-width: 1440px;
 margin: 0 auto;
 `
 export const NavContainer = styled.div`

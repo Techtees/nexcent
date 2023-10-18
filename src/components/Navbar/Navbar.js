@@ -20,7 +20,7 @@ const Navbar = () => {
                         <ListItem>FAQ</ListItem>
                     </MenuList>
                     <NavAction>
-                        <Button color='var(--green-500)' backgroundColor='var(--silver)'>Login</Button>
+                        <Button type='submit' color='var(--green-500)' backgroundColor='var(--silver)'>Login</Button>
                         <Button>Sign Up </Button>
                     </NavAction>
                 </NavContainer>
