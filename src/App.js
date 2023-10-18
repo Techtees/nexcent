@@ -1,12 +1,11 @@
-
-import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import GlobalStyle from './styles/globals.css';
 
 function App() {
   return (
     <div className="App">
-      <div>
-        Oyediran Is a  oy
-      </div>
+      <GlobalStyle />
+      <Navbar />
     </div>
   );
 }
