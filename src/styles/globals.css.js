@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
 * {
     margin: 0px;
     padding: 0px
@@ -30,7 +31,8 @@ const GlobalStyle = createGlobalStyle`
 
 html,
 body {
-    font-size: 62.5%
+    font-size: 62.5%;
+    font-family:'Inter', sans-serif;
 }
 ul{
     padding: 0px;
