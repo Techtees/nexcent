@@ -1,10 +1,11 @@
-import styled from 'styled-component';
+import styled from 'styled-components';
 
 export const Title = styled.h1`
-font-size: 4rems;
+font-size: 4rem;
 font-weight: 600;
 line-height: 4.75rem;
 font-style: normal;
+color: var(--gray-dark)
 `
 
 export const SectionHeading = styled.h2`
@@ -15,9 +16,9 @@ color: var(--grey-dark);
 `
 export const Text = styled.p`
 width: 100%;
-max-width: 601px
-font-size: 0.87rem;
+max-width: 601px;
+font-size: 0.979rem;
 font-style: normal;
-line-heght: 1.25rem;
-color: var(--grey)
+line-height: 1.25rem;
+color: var(--gray)
 `
