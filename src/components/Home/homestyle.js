@@ -6,7 +6,7 @@ color: var(--green-500);
 `
 export const HomeContainer = styled.div`
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 `
 export const ContentWrapper = styled.div`
