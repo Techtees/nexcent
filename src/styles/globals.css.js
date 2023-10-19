@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
 html,
 body {
-    font-size: 62.5%;
+    font-size: 100%;
     font-family:'Inter', sans-serif;
 }
 ul{
