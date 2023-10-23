@@ -2,6 +2,7 @@ import Navbar from './components/Navbar/Navbar';
 import GlobalStyle from './styles/globals.css';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Achievement from './components/achievement/Archievement';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Achievement />
     </div>
   );
 }
