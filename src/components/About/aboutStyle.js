@@ -59,4 +59,7 @@ width: 442px;
 `
 export const InfoDetails = styled.div`
 width: 601px;
+ >*{
+    margin-bottom: 1rem;
+ }
 `
