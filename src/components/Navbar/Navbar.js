@@ -1,8 +1,10 @@
 import Logo from '../../images/Logo.png';
-import { Nav, HeaderWrapper, MenuList, ListItem,NavAction, NavContainer, NavLogo } from './NavbarStyle';
+import PropTypes from 'prop-types';
+import { Nav, HeaderWrapper, MenuList, ListItem,NavAction, NavContainer, NavLogo, MobileMenu } from './NavbarStyle';
 import {Button} from '../../shared/button';
 
-const Navbar = () => {
+
+const Navbar = (props) => {
     return(
     <>
         <HeaderWrapper>
@@ -12,7 +14,7 @@ const Navbar = () => {
                         <img src={Logo} alt="Nexcent" />
                     </NavLogo>
                     <MenuList>
-                        <ListItem>Home</ListItem>
+                        <ListItem>Navbar</ListItem>
                         <ListItem>Service</ListItem>
                         <ListItem>Feature</ListItem>
                         <ListItem>Product</ListItem>
@@ -20,14 +22,23 @@ const Navbar = () => {
                         <ListItem>FAQ</ListItem>
                     </MenuList>
                     <NavAction>
-                        <Button type='submit' color='var(--green-500)' backgroundColor='var(--silver)'>Login</Button>
+                        <Button type='submit' color='var(--green-500)' $background ='var(--silver)'>Login</Button>
                         <Button>Sign Up </Button>
                     </NavAction>
+                    <MobileMenu />
                 </NavContainer>
             </Nav>
         </HeaderWrapper>
     </>
     )
+}
+
+Navbar.propTypes = {
+    bgColor: PropTypes.string,
+}
+
+Navbar.defaultProps = {
+    bgColor: 'var(--silver)',
 }
 
 export default Navbar;

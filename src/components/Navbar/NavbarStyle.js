@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { device, size } from '../../utils/device'
+import { FaBars } from "react-icons/fa";
 
 export const HeaderWrapper = styled.div`
 background: var(--silver);
@@ -14,6 +16,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
+
 `
 
 export const NavLogo = styled.span`
@@ -22,18 +25,39 @@ max-width:150px;
 export const MenuList = styled.ul`
 color: var(--gray-v);
 display: flex;
+width: 580px;
+justify-content:space-between;
 
+@media ${device.md} {
+    display: none;
+}
 `
 export const ListItem = styled.li`
-margin-right: 50px;
 cursor: pointer;
-
-&:last-child{
-    margin-right: 0px
-}
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
 `
 
 
 export const NavAction = styled.div`
+display: inline-flex;
+justify-content: space-around;
+
+@media ${device.md} {
+    display: none;
+}
+
+`
+export const MobileMenu = styled(FaBars)`
+cursor: pointer
+
+@media ${device.md} {
+    display: flex;
+}
+@media(min-width: ${size.md}) {
+    display: none;
+}
 
 `
