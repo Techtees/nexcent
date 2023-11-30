@@ -34,6 +34,7 @@ body {
     font-size: 100%;
     font-family:'Inter', sans-serif;
 }
+
 ul{
     padding: 0px;
     margin: 0px;
@@ -41,8 +42,9 @@ ul{
 ul li {
     list-style: none;
 }
+
 img{
-    width:100%
+    width:100%;
 }
 
 `

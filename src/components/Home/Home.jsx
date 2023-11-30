@@ -7,13 +7,13 @@ import HomeImage from '../../images/home.png'
 
 function Home(props) {
     return (
-        <Section backgroundColor={props.bgColor}>
+        <Section $background={props.bgColor}>
             <Div>
                 <HomeContainer>
                     <ContentWrapper>
                         <Title>Lessons and insights <TitleSpan>from 8 years</TitleSpan></Title>
                         <Text>Where to grow your business as a photographer: site or social Media?</Text>
-                        <Button padding={props.padding} borderRadius={props.radius}>Register</Button>
+                        <Button $padding={props.padding} $borderradius ={props.radius}>Register</Button>
                     </ContentWrapper>
                     <Image src= {HomeImage} />
                 </HomeContainer>
