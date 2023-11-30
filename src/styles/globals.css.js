@@ -40,9 +40,6 @@ ul{
 }
 ul li {
     list-style: none;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 400;
 }
 img{
     width:100%
