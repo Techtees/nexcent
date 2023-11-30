@@ -14,7 +14,7 @@ const Navbar = (props) => {
                         <img src={Logo} alt="Nexcent" />
                     </NavLogo>
                     <MenuList>
-                        <ListItem>Navbar</ListItem>
+                        <ListItem>Home</ListItem>
                         <ListItem>Service</ListItem>
                         <ListItem>Feature</ListItem>
                         <ListItem>Product</ListItem>

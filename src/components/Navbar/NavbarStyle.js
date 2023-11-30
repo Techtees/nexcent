@@ -7,7 +7,7 @@ background: var(--silver);
 padding: 1.87rem;
 `
 export const Nav = styled.nav`
-width: 90%;
+width: 95%;
 max-width: 1440px;
 margin: 0 auto;
 `
@@ -25,7 +25,8 @@ max-width:150px;
 export const MenuList = styled.ul`
 color: var(--gray-v);
 display: flex;
-width: 580px;
+width:100%;
+max-width: 500px;
 justify-content:space-between;
 
 @media ${device.md} {
