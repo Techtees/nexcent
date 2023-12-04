@@ -26,6 +26,11 @@ font-style: normal;
 font-weight: 600;
 line-height: 2.75rem;
 color: var(--gray-dark);
+
+@media ${device.base} {
+    font-size: 2rem;
+    text-align: center
+}
 `
 export const Text = styled.p`
 width: 100%;
@@ -34,7 +39,7 @@ font-size: ${(props) => props.fontSize || '0.979rem'};
 font-style: normal;
 line-height: 1.25rem;
 color: var(--gray);
-text-align: ${(props) => props.textAlign || 'none'};
+text-align: ${(props) => props.$textAlign || 'none'};
 
 @media ${device.base} {
     text-align: center;
