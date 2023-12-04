@@ -24,7 +24,7 @@ function About() {
                         <InfoHeading>
                             Membership Orgainization
                         </InfoHeading>
-                        <Text textAlign='center'>
+                        <Text $textalign='center'>
                         Our membership management software provides full automation of membership renewals and payments
                         </Text>
                     </InfoItem>
@@ -33,7 +33,7 @@ function About() {
                         <InfoHeading>
                             National Association
                         </InfoHeading>
-                        <Text textAlign='center'>
+                        <Text $textalign='center'>
                         Our membership management software provides full automation of membership renewals and payments
                         </Text>
                     </InfoItem>
@@ -42,7 +42,7 @@ function About() {
                         <InfoHeading>
                             Membership Orgainization
                         </InfoHeading>
-                        <Text textAlign='center'>
+                        <Text $textalign='center'>
                         Our membership management software provides full automation of membership renewals and payments
                         </Text>
                     </InfoItem>

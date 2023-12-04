@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { device, size } from '../../utils/device';
 
 export const AboutWrapper = styled.div`
 width:1 00%;
 margin: 0 auto;
 max-width: 542px;
 text-align: center;
-// border: 1px solid red;
 
 > *{
     margin-bottom: 1rem;
@@ -20,6 +20,8 @@ export const AboutInfo = styled.div`
 display: flex;
 justify-content: center ;
 gap: 5rem;
+flex-wrap: wrap;
+padding-top: 1rem;
 
 `
 export const InfoItem = styled.div`
@@ -32,7 +34,13 @@ justify-content: center;
 align-items: center;
 background: var(--neutral-white, #FFF);
 border-raduis: 8px;
-box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.20);
+box-shadow: 4px 2px 4px 2px rgba(171, 190, 209, 0.20);
+
+
+@media ${device.base} {
+width:100%;
+border: 1px solid red;
+}
 `
 
 export const Icon = styled.img`
@@ -52,14 +60,32 @@ export const OtherInfo = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+margin-top: 10px;
 // gap: 4rem
+
+@media ${device.md} {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media ${device.base} {
+    flex-direction: column;
+}
 `
 export const OtherInfoImage = styled.img`
-width: 442px;
+max-width: 442px;
 `
 export const InfoDetails = styled.div`
-width: 601px;
+max-width: 601px;
  >*{
     margin-bottom: 1rem;
- }
+ };
+
+ @media ${device.base} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
 `
