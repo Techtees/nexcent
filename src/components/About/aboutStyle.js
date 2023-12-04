@@ -39,7 +39,6 @@ box-shadow: 4px 2px 4px 2px rgba(171, 190, 209, 0.20);
 
 @media ${device.base} {
 width:100%;
-border: 1px solid red;
 }
 `
 

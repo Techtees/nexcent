@@ -14,7 +14,7 @@ color: var(--gray-dark);
     line-height: 3.75rem;
 }
 @media ${device.base} {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     text-align: center;
     line-height: 2rem;
 }
@@ -27,9 +27,15 @@ font-weight: 600;
 line-height: 2.75rem;
 color: var(--gray-dark);
 
-@media ${device.base} {
+@media ${device.md} {
     font-size: 2rem;
-    text-align: center
+    text-align: center;
+}
+
+@media ${device.base} {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.3rem;
 }
 `
 export const Text = styled.p`
@@ -41,7 +47,7 @@ line-height: 1.25rem;
 color: var(--gray);
 text-align: ${(props) => props.$textAlign || 'none'};
 
-@media ${device.base} {
+@media ${device.md} {
     text-align: center;
 }
 `
