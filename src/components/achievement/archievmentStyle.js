@@ -35,9 +35,6 @@ display: flex;
 flex-direction:column;
 justify-content: space-around;
 gap: 2rem;
-
-
-
 `
 export const Item = styled.div`
 display: flex;
@@ -45,7 +42,6 @@ gap:1rem;
 
 @media ${device.sm} {
 flex-direction: column;
-    
 }
 
 `
@@ -59,7 +55,6 @@ color: var(--gray);
 
 @media ${device.md} {
     font-size: 0.8rem;
-    border: 1px solid red
 }
 `
 export const ItemNumber = styled.span`
