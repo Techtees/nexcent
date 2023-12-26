@@ -1,4 +1,5 @@
 import {Wrapper, WrapperText,WrapperTextSpan, WrapperInfo,ItemsWrapper, ItemsRow,Item, ItemIcon, ItemInfo, ItemNumber, ItemInfoSpan } from './archievmentStyle';
+import PropTypes from 'prop-types';
 import {Div, Section} from '../../shared/container';
 import {Text, SectionHeading} from '../../shared/typography'
 import iconUser from './icons/Icon.png';
@@ -6,9 +7,9 @@ import iconGroup from './icons/Icon-1.png';
 import iconPoint from './icons/Icon-2.png';
 import iconWallet from './icons/Icon-3.png';
 
-function Achievement () {
+function Achievement (props) {
     return(
-        <Section>
+        <Section $background = {props.bgColor}>
             <Div>
                 <Wrapper>
                     <WrapperText>
@@ -60,4 +61,10 @@ function Achievement () {
     )
 }
 
+Achievement.propTypes = {
+    bgColor: PropTypes.string,
+}
+Achievement.defaultProps = {
+    bgColor: 'var(--silver)',
+}
 export default Achievement
