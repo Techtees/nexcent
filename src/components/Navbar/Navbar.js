@@ -5,6 +5,11 @@ import {Button} from '../../shared/button';
 
 
 const Navbar = (props) => {
+
+    const handleMobile = () => {
+        
+    }
+
     return(
     <>
         <HeaderWrapper>
@@ -22,10 +27,10 @@ const Navbar = (props) => {
                         <ListItem>FAQ</ListItem>
                     </MenuList>
                     <NavAction>
-                        <Button type='submit' color='var(--green-500)' $background ='var(--silver)'>Login</Button>
-                        <Button>Sign Up </Button>
+                        <Button type='submit' color={props.color} $background ={props.bgColor}>Login</Button>
+                        <Button >Sign Up </Button>
                     </NavAction>
-                    <MobileMenu />
+                    <MobileMenu onClick={handleMobile} />
                 </NavContainer>
             </Nav>
         </HeaderWrapper>
@@ -35,10 +40,12 @@ const Navbar = (props) => {
 
 Navbar.propTypes = {
     bgColor: PropTypes.string,
+    color: PropTypes.string,
 }
 
 Navbar.defaultProps = {
-    bgColor: 'var(--silver)',
+    bgColor: 'var(--white)',
+    color: 'var(--green-500)',
 }
 
 export default Navbar;

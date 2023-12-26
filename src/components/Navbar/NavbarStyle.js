@@ -44,7 +44,9 @@ line-height: 24px;
 
 export const NavAction = styled.div`
 display: inline-flex;
-justify-content: space-around;
+>* {
+    margin-left: 8px;
+}
 
 @media ${device.md} {
     display: none;
