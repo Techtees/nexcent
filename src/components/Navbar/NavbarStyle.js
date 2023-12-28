@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { device, size } from '../../utils/device'
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaPlus } from "react-icons/fa";
 
 export const HeaderWrapper = styled.div`
 background: var(--silver);
@@ -54,7 +54,7 @@ display: inline-flex;
 
 `
 export const MobileMenu = styled(FaBars)`
-cursor: pointer
+cursor: pointer;
 
 @media ${device.md} {
     display: flex;
@@ -62,5 +62,10 @@ cursor: pointer
 @media(min-width: ${size.md}) {
     display: none;
 }
+
+`
+export const CancelMenu = styled(FaPlus)`
+cursor: pointer;
+rotate: 45deg;
 
 `

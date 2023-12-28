@@ -1,15 +1,12 @@
 import Logo from '../../images/Logo.png';
 import PropTypes from 'prop-types';
-import { Nav, HeaderWrapper, MenuList, ListItem,NavAction, NavContainer, NavLogo, MobileMenu } from './NavbarStyle';
+import { Nav, HeaderWrapper, MenuList, ListItem,NavAction, NavContainer, NavLogo, MobileMenu, CancelMenu } from './NavbarStyle';
 import {Button} from '../../shared/button';
+import { useState } from 'react';
 
 
 const Navbar = (props) => {
-
-    const handleMobile = () => {
-        
-    }
-
+ const {bgColor,toggle,color} = props
     return(
     <>
         <HeaderWrapper>
@@ -27,10 +24,10 @@ const Navbar = (props) => {
                         <ListItem>FAQ</ListItem>
                     </MenuList>
                     <NavAction>
-                        <Button type='submit' color={props.color} $background ={props.bgColor}>Login</Button>
+                        <Button type='submit' color={color} $background ={bgColor}>Login</Button>
                         <Button >Sign Up </Button>
                     </NavAction>
-                    <MobileMenu onClick={handleMobile} />
+                    <MobileMenu onClick={toggle} />
                 </NavContainer>
             </Nav>
         </HeaderWrapper>
